@@ -103,5 +103,15 @@ public class Structure<T extends Comparable<T> > implements IStructure<T> {
         return current;
     }
 
+    public void print(){
 
+        Node<T> print = first;
+        String cadena = " ";
+
+        for(int i=0; i<10;i++){
+            System.out.println(print.getValue());
+            print = print.getNext();
+
+        }
+    }
 }

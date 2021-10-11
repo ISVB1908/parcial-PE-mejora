@@ -99,9 +99,9 @@ public class Main {
         int input =-1;
         do{
         
-            JOptionPane.showMessageDialog(null,"1.Enter to the parking \n2.Salida por placas \n3.Salida por placas");
+            JOptionPane.showMessageDialog(null,"1.Enter to the parking \n2.Salida por placas \n3.Salida por ID \n imprimir");
             input=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
-            while(input>3 || input<0){
+            while(input>4 || input<0){
                 input=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
             }
             switch(input){
@@ -185,21 +185,11 @@ public class Main {
 
                     newParking.deleteCarroID(deleteId,date4);
                     break;
-                //case 4: 
-                    //getlast
-                    //try {
-                        //if(list.getFirst()==null){
-                            //JOptionPane.showMessageDialog(null,"emptyList");
-                        //}else{
-                        
-                            //JOptionPane.showMessageDialog(null,"Node:"+list.getLast()+"\nName:"+list.getLast().getValue().getName()
-                            //+"\nAge:"+list.getLast().getValue().getAge());
-                        //}
+                case 4: 
+                	//newParking.getParkingList().print();
+                	JOptionPane.showMessageDialog(null,newParking.getParkingList().toString() );
+                	
                     
-                    //} catch (HeadlessException ex) {
-                        //Logger.getLogger(SList.class.getName()).log(Level.SEVERE, null, ex);
-                    //}
-                    //break;
             }
         }while(input!=0);
         

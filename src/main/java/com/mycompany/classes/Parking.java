@@ -95,7 +95,7 @@ public class Parking {
             
                 Car carrito= (Car) deleteC.getValue();
                 String facturation=factura(carrito.getEnterDate(),exitDate);
-                System.out.println("su factura es de:"+facturation);
+                System.out.println(""+facturation);
                 deleteC.setValue("Empty , Empty , Empty , Empty");
                 location=deleteC;
                 
@@ -122,7 +122,7 @@ public class Parking {
                 Car carrito= (Car) deleteC.getValue();
 
                 String facturation=factura(carrito.getEnterDate(),exitDate);
-                System.out.println("su factura es de:"+facturation);
+                System.out.println(""+facturation);
                 deleteC.setValue("Empty , Empty , Empty , Empty");
                 location=deleteC;
                 
@@ -146,6 +146,6 @@ public class Parking {
       //JOptionPane.showMessageDialog(null, days+"hora"+hour+"min"+min+"seg"+s);
       int minCost=50;
       long facturaT=(min*minCost)+((hour*60)*minCost)+((days*60*24)*minCost);
-        return "por : "+days+" d "+hour+ " h "+min+" m: "+s+"s sufactura es de :";
+        return "por : "+days+" d "+hour+ " h "+min+" m: "+s+"s sufactura es de :"+facturaT;
     }
 }
