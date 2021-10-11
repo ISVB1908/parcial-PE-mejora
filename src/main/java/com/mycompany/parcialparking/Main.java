@@ -99,7 +99,7 @@ public class Main {
         int input =-1;
         do{
         
-            JOptionPane.showMessageDialog(null,"1.Enter to the parking \n2.Salida por placas \n3.Salida por ID \n imprimir");
+            JOptionPane.showMessageDialog(null,"1.Enter to the parking \n2.Salida por placas \n3.Salida por ID \n 4.imprimir \n0.salir");
             input=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
             while(input>4 || input<0){
                 input=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
